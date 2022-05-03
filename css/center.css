@@ -1,0 +1,106 @@
+
+.center_body{
+    padding-top: 30px; 
+    background-color: #f6f6f6;
+}
+.center_body .wrapper{
+    display: flex;
+}
+/* 侧边栏 */
+.aside{
+    width: 227px;
+    margin-right: 18px;
+}
+.main{
+    flex: 1;
+}
+/* 用户概览 */
+.overiew{
+    display: flex;
+    height: 132px;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.overiew .item{
+    display: flex;
+    justify-content: space-evenly;
+        align-items: center; flex: 1;
+}
+.overiew .item:first-child{
+    border-right: 1px solid #f4f4f4;
+}
+.overiew .item a{
+    display: flex;
+    flex-direction: column;
+}
+.overiew .item a:hover{
+    color: red;
+}
+.overiew .item img{
+    width: 25px;
+}
+.overiew .item i{
+    font-size: 25px;
+    color: #e05e30;
+}
+.panner{
+    margin-top: 18px;
+    padding: 28px 18px; 
+    background-color: #fff;
+} 
+.panner_title{
+    display: flex;
+    justify-content: space-between;
+}
+.panner_title h4{
+    font-size: 22px; color: #333; font-weight: 400;
+}
+.panner_title a{
+    margin-top: 8px;
+    font-size: 16px;
+    color: #999;
+}
+.orders li{
+    display: flex;
+    margin-top: 20px;
+    height: 137px;
+    border: 1px solid #e8e8e8;
+}
+.orders .goods{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 12px;
+}
+.orders .goods .pic {
+    width: 107px;
+    height: 107px;
+}
+.orders .goods .pic img{
+    max-width: 100%;
+        max-height: 100%;
+}
+.orders .goods .info {
+    flex: 1;
+    width: 0;
+    margin-left: 5px;
+    
+}
+.orders .goods .info h5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.orders .status{
+    width: 120px;
+    margin-left: 120px;
+}
+.orders .paymet{
+    width: 200px;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+.orders .action{
+    width: 180px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      // 利用构造函数创建对象
+
+   function A( use,pas,we ) {
+         this.name =use;
+         this.age = pas;
+         this.sex = we;
+         this.sing =function(sang) {
+            console.log(sang);
+         }
+   };
+   var  ss = new A('就邓华',15,'男');
+   console.log (ss.name);
+   ss.sing(23);
+   </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      // 函数冒泡序列
+    function sort ( arr ) {
+      for (var i=0 ; i<arr.length -1; i++){
+         for (var j =0; j<arr.length -i -1; j++) {
+            if (arr[j] >arr[j +1]) {
+               var temp =arr[j];
+               arr[j] =arr[j +1];
+               arr[j +1] =temp;
+            }
+         }
+      }
+      return arr;
+    }
+      var arr1 = sort([123,213,13,1,4,2,5,6,213,123,33,313,313]);
+      console.log(arr1);
+   </script>
+</body>
+</html>

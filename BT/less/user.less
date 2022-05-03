@@ -1,0 +1,53 @@
+//out :../css/
+body{
+   background-color: rgb(244, 246, 248);
+}
+// 侧边栏
+.aside{
+   position: fixed; left: 0; top: 0;
+   width: 180px; 
+   min-height: 1000px;
+   background-color: #2f4050;
+}
+// nain
+// 主体内容
+.main {
+   min-height: 1000px;
+   padding: 72px 0 30px 180px;
+
+   // 头部
+   .navbar-fixed-top {
+       left: 180px;
+   }
+   .navbar-default {
+       background-color: #fff;
+       .navbar-brand i {
+           padding: 5px;
+           background-color: #5cb85c;
+           color: #fff;
+       }
+   }
+
+   
+   .content {
+       padding: 0 15px;
+       
+
+       // 路径导航
+       .breadcrumb {
+           background-color: #fff;
+           border: 1px solid #eee;
+       }
+
+       // 表格
+       .table {
+           text-align: center;
+           th {
+               text-align: center;
+               font-weight: 400;
+           }
+       }
+   }
+   
+}
+

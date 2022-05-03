@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      div{
+         display: inline-block;
+         width: 150px;
+         height: 30px;
+         border: 1px solid pink;
+         vertical-align: middle;
+         text-align: center;
+         line-height: 30px;
+      }
+   </style>
+</head>
+<body>
+  抽中的选手：<div></div>
+   <script>
+      let box =document.querySelector('div');
+      function getRo(max,min) {
+         return Math.floor(Math.random() * (max - min +1)) +min;
+      }
+      // 声明
+      let arr =['赵云','刘备','诸葛亮','dddd']
+      // 作为随机数
+      let random = getRo(0, arr.length -1);
+      // 写入标签内部
+      box.innerHTML = arr[random];
+      // document.write(arr[random]);
+      // arr.splice(从哪里开始删，删几个);
+      arr.splice(random,1);
+      console.log(arr)
+   </script>
+</body>
+</html>
