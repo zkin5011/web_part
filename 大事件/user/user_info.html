@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- 引入layui -->
+  <link rel="stylesheet" href="../assets/lib/layui/css/layui.css">
+  <!-- 引入本页面css -->
+  <link rel="stylesheet" href="../assets/css/user/user_info.css">
+</head>
+
+<body>
+  <!-- 面板 -> 卡片面板 -->
+  <div class="layui-card">
+    <div class="layui-card-header">修改用户信息</div>
+    <div class="layui-card-body">
+      <!-- 用户信息form表单 -->
+      <form id="formUserInfo" class="layui-form" lay-filter="formUserInfo">
+
+        <!-- 0.赋值id; 写道form标签的里面！ -->
+        <input type="hidden" name="id">
+
+        <!-- 1.登录名称 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">登录名称</label>
+          <div class="layui-input-block">
+            <!-- disabled 这个属性serialize()无法获取 -->
+            <!-- readonly 这个属性serialize()可以获取 -->
+            <input disabled readonly type="text" name="username" required lay-verify="required" placeholder="请输入登录名称"
+              autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <!-- 2.用户昵称 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">用户昵称</label>
+          <div class="layui-input-block">
+            <input type="text" name="nickname" required lay-verify="required|nickname" placeholder="请输入用户昵称"
+              autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <!-- 3.用户邮箱 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">用户邮箱</label>
+          <div class="layui-input-block">
+            <input type="text" name="email" required lay-verify="required|email" placeholder="请输入用户邮箱"
+              autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <!-- 4.按钮 -->
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <!-- 此处id不要使用 reset -->
+            <button id="btnReset" type="reset" class="layui-btn layui-btn-primary">重置</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/lib/layui/layui.all.js"></script>
+  <!-- 导入axios -->
+  <script src="../assets/lib/axios.js"></script>
+  <!-- 导入common -->
+  <script src="../assets/js/common.js"></script>
+  <!-- 导入jquery -->
+  <script src="../assets/lib/jquery.js"></script>
+  <!-- index -->
+  <script src="../assets/js/user/user_info.js"></script>
+</body>
+
+</html>
